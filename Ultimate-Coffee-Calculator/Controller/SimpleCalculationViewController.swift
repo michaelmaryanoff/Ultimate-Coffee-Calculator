@@ -18,9 +18,20 @@ class SimpleCalculationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        initialSetup()
     }
-
-
+    
 }
 
+extension SimpleCalculationViewController: UITextFieldDelegate {
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        if textField == waterTextField {
+            
+        }
+        return true
+    }
+    
+    }
