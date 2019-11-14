@@ -95,9 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				CB46163C237DE3F900F8115A /* Extensions */,
-				CBFFB5FF237DD9FA007A7530 /* Custom-Text-Fields */,
 				CB4C1152237DBF0E00B4B530 /* SimpleCalculationViewController.swift */,
 				CB4C1150237DBF0E00B4B530 /* AppDelegate.swift */,
+				CBFFB5FF237DD9FA007A7530 /* Custom-Text-Fields */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

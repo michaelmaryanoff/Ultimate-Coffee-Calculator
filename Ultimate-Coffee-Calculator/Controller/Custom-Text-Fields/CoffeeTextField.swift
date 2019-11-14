@@ -10,23 +10,6 @@ import UIKit
 
 class CoffeeTextField: UITextField, UITextFieldDelegate {
     
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        
-        guard let textFieldContents = textField.text else {
-            return false
-        }
-        
-        if textFieldContents.count > 4 {
-            return false
-        }
-        
-        return true
-    }
-    
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        print("did edit")
-    }
-    
+ 
     
 }
