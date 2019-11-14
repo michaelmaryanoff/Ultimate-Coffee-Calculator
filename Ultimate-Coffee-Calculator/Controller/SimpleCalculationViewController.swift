@@ -9,7 +9,13 @@
 import UIKit
 
 class SimpleCalculationViewController: UIViewController {
-
+    
+    
+    // Outlets
+    @IBOutlet weak var coffeeTextField: UITextField!
+    @IBOutlet weak var ratioTextField: UITextField!
+    @IBOutlet weak var waterTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

@@ -12,6 +12,7 @@
 		CB4C1156237DBF0E00B4B530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4C1154237DBF0E00B4B530 /* Main.storyboard */; };
 		CB4C1158237DBF0F00B4B530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4C1157237DBF0F00B4B530 /* Assets.xcassets */; };
 		CB4C115B237DBF0F00B4B530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4C1159237DBF0F00B4B530 /* LaunchScreen.storyboard */; };
+		CBFFB601237DDA29007A7530 /* CoffeeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFFB600237DDA29007A7530 /* CoffeeTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CB4C1157237DBF0F00B4B530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB4C115A237DBF0F00B4B530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB4C115C237DBF0F00B4B530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBFFB600237DDA29007A7530 /* CoffeeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				CB4C114F237DBF0E00B4B530 /* Ultimate-Coffee-Calculator */,
+				CB4C115C237DBF0F00B4B530 /* Info.plist */,
 				CB4C114E237DBF0E00B4B530 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,7 +67,6 @@
 		CBFFB5FC237DD8FE007A7530 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CB4C115C237DBF0F00B4B530 /* Info.plist */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -82,10 +84,19 @@
 		CBFFB5FE237DD90E007A7530 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CBFFB5FF237DD9FA007A7530 /* Custom-Text-Fields */,
 				CB4C1152237DBF0E00B4B530 /* SimpleCalculationViewController.swift */,
 				CB4C1150237DBF0E00B4B530 /* AppDelegate.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBFFB5FF237DD9FA007A7530 /* Custom-Text-Fields */ = {
+			isa = PBXGroup;
+			children = (
+				CBFFB600237DDA29007A7530 /* CoffeeTextField.swift */,
+			);
+			path = "Custom-Text-Fields";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBFFB601237DDA29007A7530 /* CoffeeTextField.swift in Sources */,
 				CB4C1153237DBF0E00B4B530 /* SimpleCalculationViewController.swift in Sources */,
 				CB4C1151237DBF0E00B4B530 /* AppDelegate.swift in Sources */,
 			);
