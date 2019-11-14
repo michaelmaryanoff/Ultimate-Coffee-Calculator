@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB46163E237DE42500F8115A /* SimpleCalculatorViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46163D237DE42500F8115A /* SimpleCalculatorViewController+Extensions.swift */; };
 		CB4C1151237DBF0E00B4B530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C1150237DBF0E00B4B530 /* AppDelegate.swift */; };
 		CB4C1153237DBF0E00B4B530 /* SimpleCalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C1152237DBF0E00B4B530 /* SimpleCalculationViewController.swift */; };
 		CB4C1156237DBF0E00B4B530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4C1154237DBF0E00B4B530 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB46163D237DE42500F8115A /* SimpleCalculatorViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleCalculatorViewController+Extensions.swift"; sourceTree = "<group>"; };
 		CB4C114D237DBF0E00B4B530 /* Ultimate-Coffee-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ultimate-Coffee-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4C1150237DBF0E00B4B530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB4C1152237DBF0E00B4B530 /* SimpleCalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalculationViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB46163C237DE3F900F8115A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB46163D237DE42500F8115A /* SimpleCalculatorViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CB4C1144237DBF0E00B4B530 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 		CBFFB5FE237DD90E007A7530 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CB46163C237DE3F900F8115A /* Extensions */,
 				CBFFB5FF237DD9FA007A7530 /* Custom-Text-Fields */,
 				CB4C1152237DBF0E00B4B530 /* SimpleCalculationViewController.swift */,
 				CB4C1150237DBF0E00B4B530 /* AppDelegate.swift */,
@@ -170,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB46163E237DE42500F8115A /* SimpleCalculatorViewController+Extensions.swift in Sources */,
 				CBFFB601237DDA29007A7530 /* CoffeeTextField.swift in Sources */,
 				CB4C1153237DBF0E00B4B530 /* SimpleCalculationViewController.swift in Sources */,
 				CB4C1151237DBF0E00B4B530 /* AppDelegate.swift in Sources */,
