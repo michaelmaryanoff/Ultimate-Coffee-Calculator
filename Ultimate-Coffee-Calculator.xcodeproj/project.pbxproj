@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB4C1151237DBF0E00B4B530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C1150237DBF0E00B4B530 /* AppDelegate.swift */; };
+		CB4C1153237DBF0E00B4B530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C1152237DBF0E00B4B530 /* ViewController.swift */; };
+		CB4C1156237DBF0E00B4B530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4C1154237DBF0E00B4B530 /* Main.storyboard */; };
+		CB4C1158237DBF0F00B4B530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4C1157237DBF0F00B4B530 /* Assets.xcassets */; };
+		CB4C115B237DBF0F00B4B530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4C1159237DBF0F00B4B530 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB4C114D237DBF0E00B4B530 /* Ultimate-Coffee-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ultimate-Coffee-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4C1150237DBF0E00B4B530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB4C1152237DBF0E00B4B530 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB4C1155237DBF0E00B4B530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB4C1157237DBF0F00B4B530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB4C115A237DBF0F00B4B530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB4C115C237DBF0F00B4B530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB4C114A237DBF0E00B4B530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB4C1144237DBF0E00B4B530 = {
+			isa = PBXGroup;
+			children = (
+				CB4C114F237DBF0E00B4B530 /* Ultimate-Coffee-Calculator */,
+				CB4C114E237DBF0E00B4B530 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB4C114E237DBF0E00B4B530 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C114D237DBF0E00B4B530 /* Ultimate-Coffee-Calculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB4C114F237DBF0E00B4B530 /* Ultimate-Coffee-Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C1150237DBF0E00B4B530 /* AppDelegate.swift */,
+				CB4C1152237DBF0E00B4B530 /* ViewController.swift */,
+				CB4C1154237DBF0E00B4B530 /* Main.storyboard */,
+				CB4C1157237DBF0F00B4B530 /* Assets.xcassets */,
+				CB4C1159237DBF0F00B4B530 /* LaunchScreen.storyboard */,
+				CB4C115C237DBF0F00B4B530 /* Info.plist */,
+			);
+			path = "Ultimate-Coffee-Calculator";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB4C114C237DBF0E00B4B530 /* Ultimate-Coffee-Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB4C115F237DBF0F00B4B530 /* Build configuration list for PBXNativeTarget "Ultimate-Coffee-Calculator" */;
+			buildPhases = (
+				CB4C1149237DBF0E00B4B530 /* Sources */,
+				CB4C114A237DBF0E00B4B530 /* Frameworks */,
+				CB4C114B237DBF0E00B4B530 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ultimate-Coffee-Calculator";
+			productName = "Ultimate-Coffee-Calculator";
+			productReference = CB4C114D237DBF0E00B4B530 /* Ultimate-Coffee-Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB4C1145237DBF0E00B4B530 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Michael Maryanoff";
+				TargetAttributes = {
+					CB4C114C237DBF0E00B4B530 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = CB4C1148237DBF0E00B4B530 /* Build configuration list for PBXProject "Ultimate-Coffee-Calculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB4C1144237DBF0E00B4B530;
+			productRefGroup = CB4C114E237DBF0E00B4B530 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB4C114C237DBF0E00B4B530 /* Ultimate-Coffee-Calculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB4C114B237DBF0E00B4B530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4C115B237DBF0F00B4B530 /* LaunchScreen.storyboard in Resources */,
+				CB4C1158237DBF0F00B4B530 /* Assets.xcassets in Resources */,
+				CB4C1156237DBF0E00B4B530 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB4C1149237DBF0E00B4B530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4C1153237DBF0E00B4B530 /* ViewController.swift in Sources */,
+				CB4C1151237DBF0E00B4B530 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB4C1154237DBF0E00B4B530 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB4C1155237DBF0E00B4B530 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB4C1159237DBF0F00B4B530 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB4C115A237DBF0F00B4B530 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB4C115D237DBF0F00B4B530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB4C115E237DBF0F00B4B530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB4C1160237DBF0F00B4B530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DPU8RFFB2;
+				INFOPLIST_FILE = "Ultimate-Coffee-Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MichaelMaryanoff.Ultimate-Coffee-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB4C1161237DBF0F00B4B530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DPU8RFFB2;
+				INFOPLIST_FILE = "Ultimate-Coffee-Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MichaelMaryanoff.Ultimate-Coffee-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB4C1148237DBF0E00B4B530 /* Build configuration list for PBXProject "Ultimate-Coffee-Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4C115D237DBF0F00B4B530 /* Debug */,
+				CB4C115E237DBF0F00B4B530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB4C115F237DBF0F00B4B530 /* Build configuration list for PBXNativeTarget "Ultimate-Coffee-Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4C1160237DBF0F00B4B530 /* Debug */,
+				CB4C1161237DBF0F00B4B530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB4C1145237DBF0E00B4B530 /* Project object */;
+}
