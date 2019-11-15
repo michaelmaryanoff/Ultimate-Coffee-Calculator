@@ -64,3 +64,49 @@ extension SimpleCalculationViewController {
     }
     
 }
+
+// MARK: - Text field methods
+extension SimpleCalculationViewController: UITextFieldDelegate {
+    
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        if setCharacterLimit(textField: textField, shouldChangeCharactersIn: range, replacementString: string) == false {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    func setCharacterLimit(textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        switch textField {
+        case coffeeTextField:
+            return limitCharacterOutput(textField: coffeeTextField, maxStringLength: 3, range: range, string: string)
+        case ratioTextField:
+            return limitCharacterOutput(textField: ratioTextField, maxStringLength: 2, range: range, string: string)
+        case waterTextField:
+            return limitCharacterOutput(textField: waterTextField, maxStringLength: 5, range: range, string: string)
+        default:
+            return true
+        }
+
+    }
+    
+    func limitCharacterOutput(textField: UITextField, maxStringLength: Int, range: NSRange, string: String) -> Bool {
+        var result = true
+        guard let text = textField.text else {
+            return false
+        }
+        
+        let disallowedCharacterSet = NSCharacterSet(charactersIn: "0123456789.-").inverted
+        let replacementStringIsLegal = string.rangeOfCharacter(from: disallowedCharacterSet) == nil
+        result = replacementStringIsLegal
+        
+        let maxStringLength = maxStringLength
+        let currentString: NSString = text as NSString
+        let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
+        return newString.length <= maxStringLength && result
+    }
+    
+}
