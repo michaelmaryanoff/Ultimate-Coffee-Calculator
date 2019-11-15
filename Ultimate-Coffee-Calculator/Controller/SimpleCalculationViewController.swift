@@ -10,7 +10,6 @@ import UIKit
 
 class SimpleCalculationViewController: UIViewController {
     
-    
     // Outlets
     @IBOutlet weak var coffeeTextField: UITextField!
     @IBOutlet weak var ratioTextField: UITextField!
@@ -22,22 +21,32 @@ class SimpleCalculationViewController: UIViewController {
         initialSetup()
     }
     
+
+    @IBAction func coffeeWeightChanged(_ sender: Any) {
+        if let coffeeWeightText = coffeeTextField.text, let ratioText = ratioTextField.text {
+            
+            let coffeeWeightToInt = Int(coffeeWeightText) ?? 0
+            let ratioTextToInt = Int(ratioText) ?? 0
+            var calculatedWater: Int { return coffeeWeightToInt * ratioTextToInt }
+            waterTextField.text = String(calculatedWater)
+        }
+    }
+    
+    
+    
 }
 
 extension SimpleCalculationViewController: UITextFieldDelegate {
     
+    // MARK: - Text field functions
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         if setCharacterLimit(textField: textField, shouldChangeCharactersIn: range, replacementString: string) == false {
-            
             return false
         } else {
-            
+
             return true
         }
-        
-        
-        
     }
     
     func setCharacterLimit(textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
