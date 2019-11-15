@@ -80,16 +80,22 @@
                                     <action selector="ratioDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="wdP-82-1Pn"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="water (g)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ww-qV-53s">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="water (g)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ww-qV-53s">
                                 <rect key="frame" x="77" y="420" width="221" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Gtr-wK-UWK"/>
+                                    <constraint firstAttribute="width" constant="221" id="xay-zB-jcP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="58"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Psi-5Z-05k">
-                                <rect key="frame" x="1" y="498" width="374" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Psi-5Z-05k">
+                                <rect key="frame" x="0.5" y="498" width="374" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="EHr-al-qTQ"/>
+                                    <constraint firstAttribute="width" constant="374" id="i1M-El-lmw"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="58"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -107,11 +113,15 @@
                             <constraint firstItem="R15-id-dfw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-5" id="GoY-6k-zQa"/>
                             <constraint firstItem="dno-0s-3bp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KOu-eA-81I"/>
                             <constraint firstItem="aIo-ml-OgY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LvT-8P-Pwf"/>
+                            <constraint firstItem="Psi-5Z-05k" firstAttribute="top" secondItem="1ww-qV-53s" secondAttribute="bottom" constant="8" id="OAw-fZ-DGE"/>
                             <constraint firstItem="R15-id-dfw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OoC-N2-yR5"/>
+                            <constraint firstItem="1ww-qV-53s" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PEz-92-hTz"/>
                             <constraint firstItem="8fn-oD-RKy" firstAttribute="top" secondItem="cGO-nV-goT" secondAttribute="bottom" constant="8" id="bOF-xL-x3N"/>
                             <constraint firstItem="dno-0s-3bp" firstAttribute="top" secondItem="aIo-ml-OgY" secondAttribute="bottom" constant="8" id="d3T-Ib-twC"/>
+                            <constraint firstItem="1ww-qV-53s" firstAttribute="top" secondItem="R15-id-dfw" secondAttribute="bottom" constant="46.5" id="eN7-ja-nZE"/>
                             <constraint firstItem="cGO-nV-goT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hWa-h4-BmR"/>
                             <constraint firstItem="R15-id-dfw" firstAttribute="leading" secondItem="8fn-oD-RKy" secondAttribute="trailing" constant="37.5" id="hz7-NT-Lcs"/>
+                            <constraint firstItem="Psi-5Z-05k" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vPD-yj-mue"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

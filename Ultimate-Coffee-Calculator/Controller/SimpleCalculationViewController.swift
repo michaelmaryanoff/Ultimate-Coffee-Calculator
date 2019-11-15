@@ -21,6 +21,12 @@ class SimpleCalculationViewController: UIViewController {
         initialSetup()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        super.viewWillDisappear(animated)
+        unsubscribeFromKeyboardNotifications()
+    }
+    
 
     @IBAction func coffeeWeightDidChange(_ sender: Any) {
         if let coffeeWeightText = coffeeTextField.text, let ratioText = ratioTextField.text {
