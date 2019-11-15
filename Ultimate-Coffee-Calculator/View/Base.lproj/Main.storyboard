@@ -45,6 +45,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="58"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="ratioDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="wdP-82-1Pn"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="water (g)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ww-qV-53s">
                                 <rect key="frame" x="105" y="592" width="221" height="70"/>
@@ -60,7 +63,7 @@
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="58"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="coffeeWeightChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="ZC3-a1-q7Y"/>
+                                    <action selector="coffeeWeightDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="ZC3-a1-q7Y"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Psi-5Z-05k">
@@ -69,6 +72,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="58"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="waterWeightDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="IjL-me-n53"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
