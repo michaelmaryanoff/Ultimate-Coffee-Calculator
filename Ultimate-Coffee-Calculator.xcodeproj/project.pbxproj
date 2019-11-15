@@ -13,6 +13,8 @@
 		CB4C1156237DBF0E00B4B530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4C1154237DBF0E00B4B530 /* Main.storyboard */; };
 		CB4C1158237DBF0F00B4B530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4C1157237DBF0F00B4B530 /* Assets.xcassets */; };
 		CB4C115B237DBF0F00B4B530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4C1159237DBF0F00B4B530 /* LaunchScreen.storyboard */; };
+		CB56BADA237F0A06001B6763 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56BAD9237F0A06001B6763 /* UIView+Extensions.swift */; };
+		CB56BADC237F0B12001B6763 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56BADB237F0B12001B6763 /* Colors.swift */; };
 		CBFFB601237DDA29007A7530 /* CoffeeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFFB600237DDA29007A7530 /* CoffeeTextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		CB4C1157237DBF0F00B4B530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB4C115A237DBF0F00B4B530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB4C115C237DBF0F00B4B530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB56BAD9237F0A06001B6763 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		CB56BADB237F0B12001B6763 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		CBFFB600237DDA29007A7530 /* CoffeeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +78,14 @@
 			path = "Ultimate-Coffee-Calculator";
 			sourceTree = "<group>";
 		};
+		CB56BADD237F0C62001B6763 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB56BAD9237F0A06001B6763 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CBFFB5FC237DD8FE007A7530 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,9 +96,11 @@
 		CBFFB5FD237DD909007A7530 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CB56BADD237F0C62001B6763 /* Extensions */,
 				CB4C1154237DBF0E00B4B530 /* Main.storyboard */,
 				CB4C1157237DBF0F00B4B530 /* Assets.xcassets */,
 				CB4C1159237DBF0F00B4B530 /* LaunchScreen.storyboard */,
+				CB56BADB237F0B12001B6763 /* Colors.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,7 +196,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB46163E237DE42500F8115A /* SimpleCalculatorViewController+Extensions.swift in Sources */,
+				CB56BADC237F0B12001B6763 /* Colors.swift in Sources */,
 				CBFFB601237DDA29007A7530 /* CoffeeTextField.swift in Sources */,
+				CB56BADA237F0A06001B6763 /* UIView+Extensions.swift in Sources */,
 				CB4C1153237DBF0E00B4B530 /* SimpleCalculationViewController.swift in Sources */,
 				CB4C1151237DBF0E00B4B530 /* AppDelegate.swift in Sources */,
 			);

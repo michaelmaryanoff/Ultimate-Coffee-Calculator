@@ -18,6 +18,8 @@ extension SimpleCalculationViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         
         view.addGestureRecognizer(tap)
+        
+        view.setGradientBackground(from: Colors.deepOrange, to: Colors.mellowOrange)
     }
     
     @objc func dismissKeyboard() {
