@@ -14,6 +14,15 @@ extension SimpleCalculationViewController {
         coffeeTextField.delegate = self
         ratioTextField.delegate = self
         waterTextField.delegate = self
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        
+        view.endEditing(true)
     }
     
 }
