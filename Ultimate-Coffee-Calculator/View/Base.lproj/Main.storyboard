@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,33 +15,64 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SimpleCalculationViewController" customModule="Ultimate_Coffee_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="coffee (g)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIo-ml-OgY">
-                                <rect key="frame" x="98" y="122" width="234" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="coffee (g)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIo-ml-OgY">
+                                <rect key="frame" x="70.5" y="60" width="234" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="234" id="HtZ-yF-Lvp"/>
+                                    <constraint firstAttribute="height" constant="70" id="sIr-Do-KUe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="58"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ratio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGO-nV-goT">
-                                <rect key="frame" x="151" y="361" width="112" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ratio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGO-nV-goT">
+                                <rect key="frame" x="131.5" y="225.5" width="112" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="Ohg-X8-TGB"/>
+                                    <constraint firstAttribute="height" constant="70" id="x6S-aG-5bE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="58"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fn-oD-RKy">
-                                <rect key="frame" x="151" y="447" width="53" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fn-oD-RKy">
+                                <rect key="frame" x="120.5" y="303.5" width="21" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="Pxl-CB-Sas"/>
+                                    <constraint firstAttribute="height" constant="70" id="gSr-4i-OyY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="58"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="15" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GcA-rm-llI">
-                                <rect key="frame" x="212" y="449" width="97" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R15-id-dfw">
+                                <rect key="frame" x="179" y="303.5" width="17" height="70"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="58"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="20" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dno-0s-3bp" customClass="CoffeeTextField" customModule="Ultimate_Coffee_Calculator" customModuleProvider="target">
+                                <rect key="frame" x="112" y="138" width="151" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="Dbs-Za-FYW"/>
+                                    <constraint firstAttribute="height" constant="67" id="NZh-oP-llW"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="58"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="coffeeWeightDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="ZC3-a1-q7Y"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="15" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GcA-rm-llI">
+                                <rect key="frame" x="200.5" y="303.5" width="97" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="CkC-tr-0gc"/>
+                                    <constraint firstAttribute="width" constant="97" id="O6j-Sr-lG7"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="58"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -50,24 +81,14 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="water (g)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ww-qV-53s">
-                                <rect key="frame" x="105" y="592" width="221" height="70"/>
+                                <rect key="frame" x="77" y="420" width="221" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="58"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="20" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dno-0s-3bp" customClass="CoffeeTextField" customModule="Ultimate_Coffee_Calculator" customModuleProvider="target">
-                                <rect key="frame" x="140" y="200" width="151" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="58"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <connections>
-                                    <action selector="coffeeWeightDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="ZC3-a1-q7Y"/>
-                                </connections>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Psi-5Z-05k">
-                                <rect key="frame" x="20" y="678" width="374" height="70"/>
+                                <rect key="frame" x="1" y="498" width="374" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="58"/>
@@ -78,6 +99,20 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GcA-rm-llI" firstAttribute="top" secondItem="cGO-nV-goT" secondAttribute="bottom" constant="8" id="57P-Po-zJ2"/>
+                            <constraint firstItem="cGO-nV-goT" firstAttribute="top" secondItem="aIo-ml-OgY" secondAttribute="bottom" constant="95.5" id="5TH-7J-kLe"/>
+                            <constraint firstItem="GcA-rm-llI" firstAttribute="leading" secondItem="R15-id-dfw" secondAttribute="trailing" constant="4.5" id="8dJ-k5-1Uj"/>
+                            <constraint firstItem="R15-id-dfw" firstAttribute="top" secondItem="cGO-nV-goT" secondAttribute="bottom" constant="8" id="AUq-YI-mSb"/>
+                            <constraint firstItem="R15-id-dfw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-5" id="GoY-6k-zQa"/>
+                            <constraint firstItem="dno-0s-3bp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KOu-eA-81I"/>
+                            <constraint firstItem="aIo-ml-OgY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LvT-8P-Pwf"/>
+                            <constraint firstItem="R15-id-dfw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OoC-N2-yR5"/>
+                            <constraint firstItem="8fn-oD-RKy" firstAttribute="top" secondItem="cGO-nV-goT" secondAttribute="bottom" constant="8" id="bOF-xL-x3N"/>
+                            <constraint firstItem="dno-0s-3bp" firstAttribute="top" secondItem="aIo-ml-OgY" secondAttribute="bottom" constant="8" id="d3T-Ib-twC"/>
+                            <constraint firstItem="cGO-nV-goT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hWa-h4-BmR"/>
+                            <constraint firstItem="R15-id-dfw" firstAttribute="leading" secondItem="8fn-oD-RKy" secondAttribute="trailing" constant="37.5" id="hz7-NT-Lcs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -88,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>
