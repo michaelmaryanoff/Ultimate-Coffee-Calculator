@@ -108,9 +108,9 @@
 		CBFFB5FE237DD90E007A7530 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CB46163C237DE3F900F8115A /* Extensions */,
-				CB4C1152237DBF0E00B4B530 /* SimpleCalculationViewController.swift */,
 				CB4C1150237DBF0E00B4B530 /* AppDelegate.swift */,
+				CB4C1152237DBF0E00B4B530 /* SimpleCalculationViewController.swift */,
+				CB46163C237DE3F900F8115A /* Extensions */,
 				CBFFB5FF237DD9FA007A7530 /* Custom-Text-Fields */,
 			);
 			path = Controller;

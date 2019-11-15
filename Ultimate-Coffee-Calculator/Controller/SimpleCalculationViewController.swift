@@ -10,11 +10,12 @@ import UIKit
 
 class SimpleCalculationViewController: UIViewController {
     
-    // Outlets
+    // MARK: - Outlets
     @IBOutlet weak var coffeeTextField: UITextField!
     @IBOutlet weak var ratioTextField: UITextField!
     @IBOutlet weak var waterTextField: UITextField!
     
+    // MARK: - LifeCycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,42 +28,53 @@ class SimpleCalculationViewController: UIViewController {
         unsubscribeFromKeyboardNotifications()
     }
     
-
+    // MARK: - IBActions
     @IBAction func coffeeWeightDidChange(_ sender: Any) {
-        if let coffeeWeightText = coffeeTextField.text, let ratioText = ratioTextField.text {
-            
-            let coffeeWeightToInt = Int(coffeeWeightText) ?? 0
-            let ratioTextToInt = Int(ratioText) ?? 0
-            var calculatedWater: Int { return coffeeWeightToInt * ratioTextToInt }
-            waterTextField.text = String(calculatedWater)
-        }
+            waterTextField.text = calculateFinalWeight(coffeeText: coffeeTextField.text,
+                                                       ratioText: ratioTextField.text,
+                                                       waterText: waterTextField.text,
+                                                       calculateWater: true)
+        
     }
     
     @IBAction func ratioDidChange(_ sender: Any) {
-        if let coffeeWeightText = coffeeTextField.text, let ratioText = ratioTextField.text, let waterText = waterTextField.text {
-            
-            let coffeeWeightToInt = Int(coffeeWeightText) ?? 0
-            let ratioTextToInt = Int(ratioText) ?? 0
-            let waterTextToInt = Int(waterText) ?? 0
-            var calculatedWater: Int { return coffeeWeightToInt * ratioTextToInt }
-            waterTextField.text = String(calculatedWater)
-        }
+        waterTextField.text = calculateFinalWeight(coffeeText: coffeeTextField.text,
+                                                   ratioText: ratioTextField.text,
+                                                   waterText: waterTextField.text,
+                                                   calculateWater: true)
         
     }
     
     @IBAction func waterWeightDidChange(_ sender: Any) {
-        if let coffeeWeightText = coffeeTextField.text, let ratioText = ratioTextField.text, let waterText = waterTextField.text {
-            
-            let coffeeWeightToInt = Int(coffeeWeightText) ?? 0
-            let ratioTextToInt = Int(ratioText) ?? 0
-            let waterTextToInt = Int(waterText) ?? 0
-            let calculatedCoffee = calculateWater(coffee: coffeeWeightToInt, ratio: ratioTextToInt, water: waterTextToInt)
-            coffeeTextField.text = String(calculatedCoffee)
-        }
+        waterTextField.text = calculateFinalWeight(coffeeText: coffeeTextField.text,
+                                                   ratioText: ratioTextField.text,
+                                                   waterText: waterTextField.text,
+                                                   calculateWater: false)
         
     }
     
-    func calculateWater(coffee: Int, ratio: Int, water: Int) -> Int {
+    // MARK: - Helper methods
+    func calculateFinalWeight(coffeeText: String?, ratioText: String?, waterText: String?, calculateWater: Bool) -> String {
+        
+        // If "calculateWater" is true, we are multiplying the amount of coffee by the ratio
+        // If "calculateWater" is false, we are dividing water by the ratio
+        var calculationResult = ""
+        if let coffeeText = coffeeText, let ratioText = ratioText, let waterText = waterText {
+            let coffeeTextToInt = Int(coffeeText) ?? 0
+            let ratioTextToInt = Int(ratioText) ?? 0
+            let waterTextToInt = Int(waterText) ?? 0
+            var computedWater: Int { return coffeeTextToInt * ratioTextToInt }
+            let computedCoffee: Int = calculateCoffee(coffee: coffeeTextToInt, ratio: ratioTextToInt, water: waterTextToInt)
+            if calculateWater == true {
+                calculationResult = String(computedWater)
+            } else {
+                calculationResult = String(computedCoffee)
+            }
+        }
+        return calculationResult
+    }
+    
+    func calculateCoffee(coffee: Int, ratio: Int, water: Int) -> Int {
         if water > 0 {
             return water / ratio
         } else {
