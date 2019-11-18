@@ -117,7 +117,7 @@ extension SimpleCalculationViewController: UITextFieldDelegate {
 //MARK: - Calculation Methods
 extension SimpleCalculationViewController {
     
-    func calculateFinalWeight(coffeeText: String?, ratioText: String?, waterText: String?, calculateWater: Bool) -> String {
+    func calculateFinalWeight(calculateWater: Bool) -> String {
         
         // If "calculateWater" is true, we are multiplying the amount of coffee by the ratio
         // If "calculateWater" is false, we are dividing water by the ratio

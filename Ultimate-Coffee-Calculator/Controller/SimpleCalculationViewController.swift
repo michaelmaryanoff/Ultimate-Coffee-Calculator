@@ -39,28 +39,19 @@ class SimpleCalculationViewController: UIViewController {
     // MARK: - IBActions
     @IBAction func coffeeWeightDidChange(_ sender: Any) {
         print("called \(#function)")
-        waterTextField.text = calculateFinalWeight(coffeeText: coffeeTextField.text,
-                                                   ratioText: ratioTextField.text,
-                                                   waterText: waterTextField.text,
-                                                   calculateWater: true)
+        waterTextField.text = calculateFinalWeight(calculateWater: true)
         
     }
     
     @IBAction func ratioDidChange(_ sender: Any) {
         print("called \(#function)")
-        waterTextField.text = calculateFinalWeight(coffeeText: coffeeTextField.text,
-                                                   ratioText: ratioTextField.text,
-                                                   waterText: waterTextField.text,
-                                                   calculateWater: true)
+        waterTextField.text = calculateFinalWeight(calculateWater: true)
         
     }
     
     @IBAction func waterWeightDidChange(_ sender: Any) {
         print("called \(#function)")
-        coffeeTextField.text = calculateFinalWeight(coffeeText: coffeeTextField.text,
-                                                   ratioText: ratioTextField.text,
-                                                   waterText: waterTextField.text,
-                                                   calculateWater: false)
+        coffeeTextField.text = calculateFinalWeight(calculateWater: false)
 
     }
     
