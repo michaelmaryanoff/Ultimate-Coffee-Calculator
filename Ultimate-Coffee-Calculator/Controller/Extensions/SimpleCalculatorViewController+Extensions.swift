@@ -15,7 +15,7 @@ extension SimpleCalculationViewController {
         
         addDelegates()
         addGestureRecognizer()
-        subscribeToKeyboardNotifications()
+        
         view.setGradientBackground(from: Colors.deepOrange, to: Colors.mellowOrange)
     }
     
@@ -42,8 +42,7 @@ extension SimpleCalculationViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
-    @objc func keyboardWillShow(_ notification:Notification) {
-        print("called \(#function)")
+    @objc func keyboardWillShow(_ notification: Notification) {
         if waterTextField.isEditing {
             view.frame.origin.y -= getKeyboardHeight(notification)
         }
@@ -55,6 +54,7 @@ extension SimpleCalculationViewController {
     }
     
     func getKeyboardHeight(_ notification:Notification) -> CGFloat {
+        print("called \(#function)")
         let userInfo = notification.userInfo
         let keyboardSize = userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue
         return keyboardSize.cgRectValue.height

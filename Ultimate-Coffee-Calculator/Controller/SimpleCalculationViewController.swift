@@ -18,13 +18,21 @@ class SimpleCalculationViewController: UIViewController {
     // MARK: - LifeCycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("called \(#function)")
         
         initialSetup()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        print("called \(#function)")
         
+        subscribeToKeyboardNotifications()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
         unsubscribeFromKeyboardNotifications()
     }
     
@@ -49,7 +57,6 @@ class SimpleCalculationViewController: UIViewController {
     
     @IBAction func waterWeightDidChange(_ sender: Any) {
         print("called \(#function)")
-        
         coffeeTextField.text = calculateFinalWeight(coffeeText: coffeeTextField.text,
                                                    ratioText: ratioTextField.text,
                                                    waterText: waterTextField.text,
