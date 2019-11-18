@@ -120,9 +120,9 @@ extension SimpleCalculationViewController: UITextFieldDelegate {
 extension SimpleCalculationViewController {
     
     func calculateFinalWeight(calculateWater: Bool) -> String {
-        // This function is used to calculate the weight of water or coffee used
-        // If "calculateWater" is true, we are multiplying the amount of coffee by the ratio
-        // If "calculateWater" is false, we are dividing the amount of water by the ratio
+        // This function is used to calculate the weight of water or coffee used.
+        // If "calculateWater" is true, we are calculating the amount of water needed.
+        // If "calculateWater" is false, we are calculating the amount of coffee needed.
         var calculationResult = ""
         if let coffeeText = coffeeTextField.text, let ratioText = ratioTextField.text, let waterText = waterTextField.text {
             let coffeeTextToInt = Int(coffeeText) ?? 0
