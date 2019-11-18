@@ -10,7 +10,7 @@ import UIKit
 
 extension SimpleCalculationViewController {
     
-    // MARK: - Lifecycle functions
+    // MARK: - Lifecycle Methods
     func initialSetup() {
         
         addDelegates()
@@ -19,7 +19,7 @@ extension SimpleCalculationViewController {
         view.setGradientBackground(from: Colors.deepOrange, to: Colors.mellowOrange)
     }
     
-    // MARK: - Helper functions
+    // MARK: - Setup Methods
     func addDelegates() {
         coffeeTextField.delegate = self
         ratioTextField.delegate = self
@@ -113,6 +113,8 @@ extension SimpleCalculationViewController: UITextFieldDelegate {
     
 }
 
+
+//MARK: - Calculation Methods
 extension SimpleCalculationViewController {
     
     func calculateFinalWeight(coffeeText: String?, ratioText: String?, waterText: String?, calculateWater: Bool) -> String {
@@ -120,7 +122,7 @@ extension SimpleCalculationViewController {
         // If "calculateWater" is true, we are multiplying the amount of coffee by the ratio
         // If "calculateWater" is false, we are dividing water by the ratio
         var calculationResult = ""
-        if let coffeeText = coffeeText, let ratioText = ratioText, let waterText = waterText {
+        if let coffeeText = coffeeTextField.text, let ratioText = ratioTextField.text, let waterText = waterTextField.text {
             let coffeeTextToInt = Int(coffeeText) ?? 0
             let ratioTextToInt = Int(ratioText) ?? 0
             let waterTextToInt = Int(waterText) ?? 0
