@@ -15,6 +15,7 @@ extension SimpleCalculationViewController {
         
         addDelegates()
         addGestureRecognizer()
+        subscribeToKeyboardNotifications()
         
         view.setGradientBackground(from: Colors.deepOrange, to: Colors.mellowOrange)
     }
@@ -27,6 +28,8 @@ extension SimpleCalculationViewController {
     }
     
     func addGestureRecognizer() {
+        // This gesture recognizer dismisses the keyboard when user
+        // taps outside of a text field.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
     }
@@ -44,24 +47,22 @@ extension SimpleCalculationViewController {
     
     @objc func keyboardWillShow(_ notification: Notification) {
         if waterTextField.isEditing {
+            // Ensures that the view only moves up when the waterTextField is tapped
             view.frame.origin.y -= getKeyboardHeight(notification)
         }
     }
     
     @objc func keyboardWillHide(_ notification:Notification) {
-        print("called \(#function)")
         view.frame.origin.y = 0
     }
     
     func getKeyboardHeight(_ notification:Notification) -> CGFloat {
-        print("called \(#function)")
         let userInfo = notification.userInfo
         let keyboardSize = userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue
         return keyboardSize.cgRectValue.height
     }
     
     @objc func dismissKeyboard() {
-        print("called \(#function)")
         view.endEditing(true)
     }
     
@@ -70,9 +71,7 @@ extension SimpleCalculationViewController {
 // MARK: - Text field methods
 extension SimpleCalculationViewController: UITextFieldDelegate {
     
-    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
         if setCharacterLimit(textField: textField, shouldChangeCharactersIn: range, replacementString: string) == false {
             return false
         } else {
@@ -81,7 +80,8 @@ extension SimpleCalculationViewController: UITextFieldDelegate {
     }
     
     func setCharacterLimit(textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
+        // This switch ensures that no text field exceeds the maximum
+        // number of characters for that specific text field.
         switch textField {
         case coffeeTextField:
             return limitCharacterOutput(textField: coffeeTextField, maxStringLength: 3, range: range, string: string)
@@ -96,6 +96,8 @@ extension SimpleCalculationViewController: UITextFieldDelegate {
     }
     
     func limitCharacterOutput(textField: UITextField, maxStringLength: Int, range: NSRange, string: String) -> Bool {
+        
+        // Can set a max string length and illegal characters in a text field.
         var result = true
         guard let text = textField.text else {
             return false
@@ -117,10 +119,10 @@ extension SimpleCalculationViewController: UITextFieldDelegate {
 //MARK: - Calculation Methods
 extension SimpleCalculationViewController {
     
-    func calculateFinalWeight(coffeeText: String?, ratioText: String?, waterText: String?, calculateWater: Bool) -> String {
-        
-        // If "calculateWater" is true, we are multiplying the amount of coffee by the ratio
-        // If "calculateWater" is false, we are dividing water by the ratio
+    func calculateFinalWeight(calculateWater: Bool) -> String {
+        // This function is used to calculate the weight of water or coffee used.
+        // If "calculateWater" is true, we are calculating the amount of water needed.
+        // If "calculateWater" is false, we are calculating the amount of coffee needed.
         var calculationResult = ""
         if let coffeeText = coffeeTextField.text, let ratioText = ratioTextField.text, let waterText = waterTextField.text {
             let coffeeTextToInt = Int(coffeeText) ?? 0
@@ -138,6 +140,8 @@ extension SimpleCalculationViewController {
     }
     
     func calculateCoffee(coffee: Int, ratio: Int, water: Int) -> Int {
+        
+        // This function ensure we do not encounter a divide by zero error
         if water > 0 {
             return water / ratio
         } else {

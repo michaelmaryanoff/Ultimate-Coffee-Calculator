@@ -11,6 +11,7 @@ import UIKit
 extension UIView {
     func setGradientBackground(from topColor: UIColor, to bottomColor: UIColor) {
         
+        // This function draws a gradient layer when view is loaded
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = bounds
         gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
