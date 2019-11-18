@@ -46,7 +46,6 @@ extension SimpleCalculationViewController {
         print("called \(#function)")
         if waterTextField.isEditing {
             view.frame.origin.y -= getKeyboardHeight(notification)
-            print(view.frame.origin.y)
         }
     }
     
@@ -116,13 +115,12 @@ extension SimpleCalculationViewController: UITextFieldDelegate {
 
 extension SimpleCalculationViewController {
     
-    // MARK: - Helper methods
-    func calculateFinalWeight(calculateWater: Bool) -> String {
+    func calculateFinalWeight(coffeeText: String?, ratioText: String?, waterText: String?, calculateWater: Bool) -> String {
         
         // If "calculateWater" is true, we are multiplying the amount of coffee by the ratio
         // If "calculateWater" is false, we are dividing water by the ratio
         var calculationResult = ""
-        if let coffeeText = coffeeTextField.text, let ratioText = ratioTextField.text, let waterText = waterTextField.text {
+        if let coffeeText = coffeeText, let ratioText = ratioText, let waterText = waterText {
             let coffeeTextToInt = Int(coffeeText) ?? 0
             let ratioTextToInt = Int(ratioText) ?? 0
             let waterTextToInt = Int(waterText) ?? 0
