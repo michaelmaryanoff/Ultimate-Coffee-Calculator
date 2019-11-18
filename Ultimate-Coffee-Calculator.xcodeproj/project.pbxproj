@@ -15,7 +15,6 @@
 		CB4C115B237DBF0F00B4B530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4C1159237DBF0F00B4B530 /* LaunchScreen.storyboard */; };
 		CB56BADA237F0A06001B6763 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56BAD9237F0A06001B6763 /* UIView+Extensions.swift */; };
 		CB56BADC237F0B12001B6763 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56BADB237F0B12001B6763 /* Colors.swift */; };
-		CBFFB601237DDA29007A7530 /* CoffeeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFFB600237DDA29007A7530 /* CoffeeTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		CB4C115C237DBF0F00B4B530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB56BAD9237F0A06001B6763 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		CB56BADB237F0B12001B6763 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		CBFFB600237DDA29007A7530 /* CoffeeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,17 +109,8 @@
 				CB4C1150237DBF0E00B4B530 /* AppDelegate.swift */,
 				CB4C1152237DBF0E00B4B530 /* SimpleCalculationViewController.swift */,
 				CB46163C237DE3F900F8115A /* Extensions */,
-				CBFFB5FF237DD9FA007A7530 /* Custom-Text-Fields */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		CBFFB5FF237DD9FA007A7530 /* Custom-Text-Fields */ = {
-			isa = PBXGroup;
-			children = (
-				CBFFB600237DDA29007A7530 /* CoffeeTextField.swift */,
-			);
-			path = "Custom-Text-Fields";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +186,6 @@
 			files = (
 				CB46163E237DE42500F8115A /* SimpleCalculatorViewController+Extensions.swift in Sources */,
 				CB56BADC237F0B12001B6763 /* Colors.swift in Sources */,
-				CBFFB601237DDA29007A7530 /* CoffeeTextField.swift in Sources */,
 				CB56BADA237F0A06001B6763 /* UIView+Extensions.swift in Sources */,
 				CB4C1153237DBF0E00B4B530 /* SimpleCalculationViewController.swift in Sources */,
 				CB4C1151237DBF0E00B4B530 /* AppDelegate.swift in Sources */,
