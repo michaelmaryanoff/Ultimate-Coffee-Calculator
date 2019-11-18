@@ -30,36 +30,27 @@ class SimpleCalculationViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func coffeeWeightDidChange(_ sender: Any) {
-            waterTextField.text = calculateFinalWeight(coffeeText: coffeeTextField.text,
-                                                       ratioText: ratioTextField.text,
-                                                       waterText: waterTextField.text,
-                                                       calculateWater: true)
+            waterTextField.text = calculateFinalWeight(calculateWater: true)
         
     }
     
     @IBAction func ratioDidChange(_ sender: Any) {
-        waterTextField.text = calculateFinalWeight(coffeeText: coffeeTextField.text,
-                                                   ratioText: ratioTextField.text,
-                                                   waterText: waterTextField.text,
-                                                   calculateWater: true)
+        waterTextField.text = calculateFinalWeight(calculateWater: true)
         
     }
     
     @IBAction func waterWeightDidChange(_ sender: Any) {
-        waterTextField.text = calculateFinalWeight(coffeeText: coffeeTextField.text,
-                                                   ratioText: ratioTextField.text,
-                                                   waterText: waterTextField.text,
-                                                   calculateWater: false)
+        waterTextField.text = calculateFinalWeight(calculateWater: false)
         
     }
     
     // MARK: - Helper methods
-    func calculateFinalWeight(coffeeText: String?, ratioText: String?, waterText: String?, calculateWater: Bool) -> String {
+    func calculateFinalWeight(calculateWater: Bool) -> String {
         
         // If "calculateWater" is true, we are multiplying the amount of coffee by the ratio
         // If "calculateWater" is false, we are dividing water by the ratio
         var calculationResult = ""
-        if let coffeeText = coffeeText, let ratioText = ratioText, let waterText = waterText {
+        if let coffeeText = coffeeTextField.text, let ratioText = ratioTextField.text, let waterText = waterTextField.text {
             let coffeeTextToInt = Int(coffeeText) ?? 0
             let ratioTextToInt = Int(ratioText) ?? 0
             let waterTextToInt = Int(waterText) ?? 0
