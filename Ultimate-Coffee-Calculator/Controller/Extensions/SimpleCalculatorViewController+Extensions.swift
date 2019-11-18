@@ -80,9 +80,8 @@ extension SimpleCalculationViewController: UITextFieldDelegate {
     }
     
     func setCharacterLimit(textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
         // This switch ensures that no text field exceeds the maximum
-        // number of characters for that specific text field
+        // number of characters for that specific text field.
         switch textField {
         case coffeeTextField:
             return limitCharacterOutput(textField: coffeeTextField, maxStringLength: 3, range: range, string: string)
@@ -121,7 +120,7 @@ extension SimpleCalculationViewController: UITextFieldDelegate {
 extension SimpleCalculationViewController {
     
     func calculateFinalWeight(calculateWater: Bool) -> String {
-        // This function is used to calculate the weight of water or coffee usde
+        // This function is used to calculate the weight of water or coffee used
         // If "calculateWater" is true, we are multiplying the amount of coffee by the ratio
         // If "calculateWater" is false, we are dividing the amount of water by the ratio
         var calculationResult = ""
