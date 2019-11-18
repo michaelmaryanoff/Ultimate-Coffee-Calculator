@@ -15,19 +15,11 @@ class SimpleCalculationViewController: UIViewController {
     @IBOutlet weak var ratioTextField: UITextField!
     @IBOutlet weak var waterTextField: UITextField!
     
-    // MARK: - LifeCycle methods
+    // MARK: - LifeCycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("called \(#function)")
         
         initialSetup()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        print("called \(#function)")
-        
-        subscribeToKeyboardNotifications()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -38,21 +30,15 @@ class SimpleCalculationViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func coffeeWeightDidChange(_ sender: Any) {
-        print("called \(#function)")
         waterTextField.text = calculateFinalWeight(calculateWater: true)
-        
     }
     
     @IBAction func ratioDidChange(_ sender: Any) {
-        print("called \(#function)")
         waterTextField.text = calculateFinalWeight(calculateWater: true)
-        
     }
     
     @IBAction func waterWeightDidChange(_ sender: Any) {
-        print("called \(#function)")
         coffeeTextField.text = calculateFinalWeight(calculateWater: false)
-
     }
     
 }
