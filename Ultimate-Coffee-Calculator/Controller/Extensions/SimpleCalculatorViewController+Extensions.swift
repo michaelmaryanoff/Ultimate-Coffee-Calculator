@@ -142,7 +142,7 @@ extension SimpleCalculationViewController {
     func calculateCoffee(coffee: Int, ratio: Int, water: Int) -> Int {
         
         // This function ensure we do not encounter a divide by zero error
-        if water > 0 {
+        if water > 0 && ratio > 0 {
             return water / ratio
         } else {
             return 0
