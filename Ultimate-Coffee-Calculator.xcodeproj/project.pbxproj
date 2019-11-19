@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		CB46163D237DE42500F8115A /* SimpleCalculatorViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleCalculatorViewController+Extensions.swift"; sourceTree = "<group>"; };
-		CB4C114D237DBF0E00B4B530 /* Ultimate-Coffee-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ultimate-Coffee-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4C114D237DBF0E00B4B530 /* SimpleCoffeeCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCoffeeCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4C1150237DBF0E00B4B530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB4C1152237DBF0E00B4B530 /* SimpleCalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalculationViewController.swift; sourceTree = "<group>"; };
 		CB4C1155237DBF0E00B4B530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		CB4C114E237DBF0E00B4B530 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB4C114D237DBF0E00B4B530 /* Ultimate-Coffee-Calculator.app */,
+				CB4C114D237DBF0E00B4B530 /* SimpleCoffeeCalculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,7 +130,7 @@
 			);
 			name = "Ultimate-Coffee-Calculator";
 			productName = "Ultimate-Coffee-Calculator";
-			productReference = CB4C114D237DBF0E00B4B530 /* Ultimate-Coffee-Calculator.app */;
+			productReference = CB4C114D237DBF0E00B4B530 /* SimpleCoffeeCalculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -269,6 +269,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = SimpleCoffeeCalculator;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -323,6 +324,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = SimpleCoffeeCalculator;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -341,8 +343,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "MichaelMaryanoff.Ultimate-Coffee-Calculator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SimpleCoffeeCalculator;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -359,8 +362,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "MichaelMaryanoff.Ultimate-Coffee-Calculator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SimpleCoffeeCalculator;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
