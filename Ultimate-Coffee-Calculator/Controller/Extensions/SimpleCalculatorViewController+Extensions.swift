@@ -103,7 +103,7 @@ extension SimpleCalculationViewController: UITextFieldDelegate {
             return false
         }
         
-        let disallowedCharacterSet = NSCharacterSet(charactersIn: "0123456780").inverted
+        let disallowedCharacterSet = NSCharacterSet(charactersIn: "0123456789").inverted
         let replacementStringIsLegal = string.rangeOfCharacter(from: disallowedCharacterSet) == nil
         result = replacementStringIsLegal
         
