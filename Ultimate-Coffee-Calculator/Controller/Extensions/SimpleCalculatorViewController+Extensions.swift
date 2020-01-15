@@ -53,10 +53,12 @@ extension SimpleCalculationViewController {
     }
     
     @objc func keyboardWillHide(_ notification:Notification) {
+        // Returns view to original position
         view.frame.origin.y = 0
     }
     
     func getKeyboardHeight(_ notification:Notification) -> CGFloat {
+        // Gets the keyboard height in order to move frame to proper position
         let userInfo = notification.userInfo
         let keyboardSize = userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue
         return keyboardSize.cgRectValue.height
@@ -120,7 +122,7 @@ extension SimpleCalculationViewController: UITextFieldDelegate {
 extension SimpleCalculationViewController {
     
     func calculateFinalWeight(calculateWater: Bool) -> String {
-        // This function is used to calculate the weight of water or coffee used.
+        // This function is used to calculate the weight of water or coffee needed to brew a cup.
         // If "calculateWater" is true, we are calculating the amount of water needed.
         // If "calculateWater" is false, we are calculating the amount of coffee needed.
         var calculationResult = ""
