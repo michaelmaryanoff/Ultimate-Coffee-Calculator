@@ -2,7 +2,7 @@
 
 Every morning while brewing my coffee, I would yell at my personal digital assistant (let's call her "Alexandra" for copyright purposes) to calculate the proper coffee to water ratio. I felt bad for my wife and I think it was scaring my dog, so I created this simple coffee calculator so I wouldn't have to do that anymore! And now you can use it too!
 
-It uses a simple, easy to use interface that you will be able to read even before you've had your morning coffee.
+It utilizes a simple, easy to use interface that you will be able to read even before you've had your morning coffee.
 
 <img src="https://i.imgur.com/jGFJUbB.jpg" width="30%"></img> 
 
