@@ -4,6 +4,8 @@ Every morning while brewing my coffee, I would yell at my personal digital assis
 
 It utilizes a simple, easy to use interface that you will be able to read even before you've had your morning coffee.
 
+__*Note: The repo name and bundle identifier is inhereted from an earlier project with a different bundle identifier.*__
+
 <img src="https://i.imgur.com/jGFJUbB.jpg" width="30%"></img> 
 
 To input the amount of coffee you will be using, just tap on the coffee text field and input the number of grams of coffee you will be brewing.
